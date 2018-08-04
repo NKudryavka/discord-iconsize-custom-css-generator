@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const domResult = document.getElementById('form-result-css')!;
+  const domResult = document.getElementById('form-result-css')! as HTMLTextAreaElement;
   const domStyle = document.getElementById('updated-css')!;
   const form = {
     iconsize: document.getElementById('form-iconsize')! as HTMLInputElement,
@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     domResult.textContent = css.replace(/#preview-wrapper /g, '');
     domStyle.textContent = css;
   }
+
+  domResult.addEventListener('focus', function() {this.select()})
 
   update();
   document.getElementById('setting-wrapper')!.addEventListener('input', update);
@@ -34,6 +36,14 @@ function generateResultCss(iconsize: number, iconskip: number) {
 #preview-wrapper .guild-1EfMGQ {
   height: ${iconsize}px;
   width: ${iconsize}px;
+}
+#preview-wrapper .guild-1EfMGQ.selected-ML3OIq:before, #preview-wrapper .guild-1EfMGQ.unread-qLkInr:before {
+  border-radius: ${iconsize*0.1}px;
+  content: " ";
+  height: ${iconsize*0.2}px;
+  left: ${-iconsize*0.3}px;
+  margin-top: ${-iconsize*0.1}px;
+  width: ${iconsize*0.2}px;
 }
 #preview-wrapper .guild-1EfMGQ + .guild-1EfMGQ {
   margin-top: ${iconskip}px;
