@@ -1,0 +1,22 @@
+{
+  "name": "discord-iconsize-custom-css-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p site && pug src/pug -o site && sass --update src/sass/:site/ && tsc && cp src/assets/* site",
+    "build2": "pug src/pug -o site && sass --update src/sass/:site/ && tsc && cp src/assets/* site",
+    "build:pug:watch": "pug --watch src/pug -o site",
+    "build:sass:watch": "sass --watch src/sass/:site/",
+    "build:ts:watch": "tsc --watch"
+  },
+  "author": "NKudryavka",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.10.1",
+    "typescript": "^3.0.1"
+  }
+}

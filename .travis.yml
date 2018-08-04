@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- 8
+script: npm run build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GITHUB_TOKEN"
+  local_dir: site
+  on:
+    branch: master
+branches:
+  only:
+  - master
+notifications:
+  email: false
+  slack:
+    secure: vJ8yIE/W2KQGyVg4UjmtrODAvbR3s9F6/9ksW2gvePTyhby8DXIgcWnUchD9cRBPh6xNB6R5bOWSEC/WmwjaWsDtlQTiSoOmC/Yf/UFYr2r+ZLXGDfBFQM6TPoRpIM8MwC3zYE/y1Sv7BHicVl9Vry48ompE59tJu6588IAr80+sP60pobOkpYPvvRlkB1EaTGs+WrvM3aWr5KN41FYtomUeYoTAhhZHPvrf3HCkJUDEEE6wsVaGjLXCxFsMuiY3tlV/JMRTAPkBx7x8cc8NcO9zAmzUKAs14/IPbs4fqwTZaNIYTwvoS6qJ/zwr9IpnJ8vBjcmyZE8pjI7NRa4CMeTkUpfqvdBzYfukXNLk3+RVaJWf4iZet1PnYMwslndsiwq5d2g2aD1rtVVTfkxUhOPcr1uyS2h/MpNfGfAt2oF9wVB205DiGDSoKoTxl0NcOPycs+AGFOvJPIz80Uy7Myi/3qZqnqntzqEBvf6qDNsoNJUfuzGdIVjcNLSe6p4h/LuQzpZBcCJE7Knjxnd9KKbBXlAkrV2Qq0NpyapxZzQ5Bh/0kD7gsB0Age2WADDM/UL291prnI3mME/hJUYZORrPcV5J4uqBDVg1uYEzj0xWLccjylKdjjQrGkcShF82TzAUhbUIhEziWfbMvGWNcmaIhWP9JMSl3WwxgHhMypY=
