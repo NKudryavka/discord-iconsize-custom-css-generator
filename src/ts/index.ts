@@ -47,11 +47,11 @@ function generateResultCss(iconsize: number, iconskip: number) {
   height: ${iconsize}px;
   width: ${iconsize}px;
 }
-#preview-wrapper .iconSizeLarge-161qtT {
+#preview-wrapper .guilds-1q_RqH .iconSizeLarge-161qtT {
   width: ${iconsize}px;
   height: ${iconsize}px;
 }
-#preview-wrapper .iconSizeLarge-161qtT.noIcon-1a_FrS {
+#preview-wrapper .guilds-1q_RqH .iconSizeLarge-161qtT.noIcon-1a_FrS {
   line-height: ${iconsize}px;
 }
 #preview-wrapper #bd-pub-li {
