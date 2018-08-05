@@ -1,0 +1,159 @@
+#preview-wrapper div {
+  outline: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+#preview-wrapper .guildsWrapper-5TJh6A {
+  contain: layout;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+  width: 70px;
+}
+.theme-dark #preview-wrapper .guildsWrapper-5TJh6A {
+  background-color: #202225;
+}
+#preview-wrapper .scroll-wrap {
+  display: flex;
+  position: relative;
+  flex: 1;
+  min-height: 1px;
+}
+#preview-wrapper .scroll-wrap .scroller {
+  flex: 1;
+  min-height: 1px;
+  contain: layout;
+  overflow-y: scroll;
+}
+#preview-wrapper .scrollWrap-1IAIlv {
+  width: 88px;
+}
+#preview-wrapper .guilds-1q_RqH {
+  overflow-x: hidden;
+  padding: 10px 0 10px 10px;
+  user-select: none;
+}
+#preview-wrapper .guild-1EfMGQ {
+  height: 50px;
+  position: relative;
+  width: 50px;
+  z-index: 1;
+}
+#preview-wrapper .guild-1EfMGQ.selected-ML3OIq:before, #preview-wrapper .guild-1EfMGQ.unread-qLkInr:before {
+  border-radius: 5px;
+  content: " ";
+  height: 10px;
+  left: -15px;
+  margin-top: -6px;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+}
+#preview-wrapper .guild-1EfMGQ.selected-ML3OIq:before {
+  background: #ffffff;
+}
+#preview-wrapper .guild-1EfMGQ.unread-qLkInr:before {
+  background: #8a8e94;
+}
+#preview-wrapper .guild-1EfMGQ + .guild-1EfMGQ {
+  margin-top: 8px;
+}
+#preview-wrapper .guild-1EfMGQ .guildInner-3DSoA4 {
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+.theme-dark #preview-wrapper .guild-1EfMGQ .guildInner-3DSoA4 {
+  background: #2f3136;
+}
+#preview-wrapper .guild-1EfMGQ .guildInner-3DSoA4 a {
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+.theme-dark #preview-wrapper .guild-1EfMGQ .guildInner-3DSoA4 a {
+  color: #fff;
+}
+#preview-wrapper .guild-1EfMGQ .guildIcon-CT-ZDq {
+  border-radius: 0;
+}
+.theme-dark #preview-wrapper .guild-1EfMGQ .guildIcon-CT-ZDq {
+  background-color: transparent;
+}
+#preview-wrapper .iconSizeLarge-161qtT {
+  width: 50px;
+  height: 50px;
+}
+#preview-wrapper .iconSizeLarge-161qtT.noIcon-1a_FrS {
+  line-height: 50px;
+}
+#preview-wrapper #bd-pub-li {
+  margin-top: 4px;
+}
+#preview-wrapper .friendsOnline-_wi_fM {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 50px;
+  word-wrap: normal;
+}
+#preview-wrapper .dms-rcsEnV {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#preview-wrapper .guildSeparator-1X4GQ1 {
+  background: none;
+  height: 2px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 50px;
+}
+#preview-wrapper .guildSeparator-1X4GQ1:after {
+  content: " ";
+  height: 2px;
+  left: 20%;
+  position: absolute;
+  right: 20%;
+  top: 0;
+}
+.theme-dark #preview-wrapper .guildSeparator-1X4GQ1:after {
+  background: #2f3136;
+}
+#preview-wrapper .guildsAdd-21_IdK {
+  border-radius: 50%;
+  border-style: dashed;
+  border-width: 1px;
+  font-size: 40px;
+  font-weight: 300;
+  height: 50px;
+  width: 50px;
+  line-height: 100%;
+  padding: 0;
+  text-align: center;
+  transition: border-color 0.25s ease, color 0.25s ease;
+  cursor: pointer;
+}
+.theme-dark #preview-wrapper .guildsAdd-21_IdK {
+  background: #202225;
+  border-color: #535559;
+  color: #525559;
+}
+#preview-wrapper .guildsAddInner-1KMFy- {
+  position: relative;
+  top: -5px;
+}
+
+/*# sourceMappingURL=base.css.map */

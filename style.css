@@ -1,0 +1,21 @@
+.theme-dark {
+  background: #2f3136;
+  color: #f6f6f7;
+}
+
+#preview-wrapper {
+  min-width: 100px;
+}
+#preview-wrapper ::-webkit-scrollbar {
+  width: 13px;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
