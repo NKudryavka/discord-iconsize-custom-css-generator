@@ -50,7 +50,7 @@ function generateResultCss(iconsize: number, iconskip: number) {
   margin-top: ${iconskip}px;
 }
 #preview-wrapper .guild-1EfMGQ .guildInner-3DSoA4 {
-  border-radius: ${iconsize/2}px;
+  border-radius: ${iconsize/2}px !important;
   font-size: ${iconsize*0.36}px;
   line-height: ${iconsize}px;
 }
@@ -86,8 +86,6 @@ function generateResultCss(iconsize: number, iconskip: number) {
   width: ${iconsize}px;
 }
 #preview-wrapper .guildSeparator-1X4GQ1:after {
-  content: " ";
-  height: 2px;
   left: ${sideMarginRate*100}%;
   right: ${sideMarginRate*100}%;
 }

@@ -25,7 +25,7 @@ html(lang="ja")
               .guilds-1q_RqH.scroller.da-guilds.da-scroller
                 .guild-1EfMGQ
                   .guildInner-3DSoA4.da-guildInner(style="border-radius: 25px;" draggable="false")
-                    a(href="#")
+                    a(href="https://twitter.com/ssasasssaassasa/status/932201664009736192" target="_blank")
                       .icon-3o6xvg.guildIcon-CT-ZDq.iconSizeLarge-161qtT.da-icon.da-iconSizeLarge(draggable="false" style='background: url("PaPA.png") center/contain')
                 .guild-1EfMGQ#bd-pub-li(style="height: 20px;")
                   .guildInner-3DSoA4.da-guildInner(style="border-radius: 4px; height: 20px;")
@@ -34,21 +34,22 @@ html(lang="ja")
                 .friendsOnline-_wi_fM.da-friendsOnline 99 Online
                 span.dms-rcsEnV.da-dms
                 .guildSeparator-1X4GQ1.da-guildSeparator
-                each color in ["red", "orange", "yellow", "green", "blue", "navy", "purple"]
+                - const colorCodes = {carmine: "#be0039", freshgreen: "#5de566"}
+                each color in ["white", "yellow", "blue", "red", "carmine", "green", "lightblue", "freshgreen", "orange", "pink", "purple", "black"]
                   .guild-1EfMGQ
                     div(draggable="true")
                       .guildInner-3DSoA4.da-guildInner(style="border-radius: 25px;" draggable="false")
-                        a(href="#")
-                          .icon-3o6xvg.guildIcon-CT-ZDq.iconSizeLarge-161qtT.da-icon.da-iconSizeLarge.noIcon-1a_FrS.da-noIcon(draggable="false" style=`background: ${color}`) #{color}
+                        a
+                          .icon-3o6xvg.guildIcon-CT-ZDq.iconSizeLarge-161qtT.da-icon.da-iconSizeLarge.noIcon-1a_FrS.da-noIcon(draggable="false" style=`background: ${colorCodes[color] ? colorCodes[color] : color}`) #{color}
                 .guild-1EfMGQ.unread-qLkInr
                     div(draggable="true")
                       .guildInner-3DSoA4.da-guildInner(style="border-radius: 25px;" draggable="false")
-                        a(href="#")
+                        a
                           .icon-3o6xvg.guildIcon-CT-ZDq.iconSizeLarge-161qtT.da-icon.da-iconSizeLarge.noIcon-1a_FrS.da-noIcon(draggable="false" style=`background: ${color}`) Unread
                 .guild-1EfMGQ.selected-ML3OIq
                     div(draggable="true")
                       .guildInner-3DSoA4.da-guildInner(style="border-radius: 25px;" draggable="false")
-                        a(href="#")
+                        a
                           .icon-3o6xvg.guildIcon-CT-ZDq.iconSizeLarge-161qtT.da-icon.da-iconSizeLarge.noIcon-1a_FrS.da-noIcon(draggable="false" style=`background: ${color}`) Selected
                 button.guild-1EfMGQ.guildsAdd-21_IdK.da-guild.da-guildsAdd(type="button")
                   span.guildsAddInner-1KMFy-.da-guildsAddInner +
