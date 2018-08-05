@@ -23,27 +23,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function generateResultCss(iconsize: number, iconskip: number) {
   iconskip = iconsize*iconskip/100;
-  const sideMargin = 0.2;
+  const sideMarginRate = 0.2 + (50-iconsize) * 0.003;
+  const sideMargin = iconsize*sideMarginRate;
   return `#preview-wrapper .guildsWrapper-5TJh6A {
-  width: ${iconsize*(1+sideMargin*2)}px;
+  width: ${iconsize*(1+sideMarginRate*2)}px;
 }
 #preview-wrapper .scrollWrap-1IAIlv {
-  width: ${iconsize*(1+sideMargin*2)+13}px;
+  width: ${iconsize*(1+sideMarginRate*2)+13}px;
 }
 #preview-wrapper .guilds-1q_RqH {
-  padding: 10px 0 10px ${iconsize*sideMargin}px;
+  padding: 10px 0 10px ${sideMargin}px;
 }
 #preview-wrapper .guild-1EfMGQ {
   height: ${iconsize}px;
   width: ${iconsize}px;
 }
 #preview-wrapper .guild-1EfMGQ.selected-ML3OIq:before, #preview-wrapper .guild-1EfMGQ.unread-qLkInr:before {
-  border-radius: ${iconsize*0.1}px;
+  border-radius: ${sideMargin/2}px;
   content: " ";
-  height: ${iconsize*0.2}px;
-  left: ${-iconsize*0.3}px;
-  margin-top: ${-iconsize*0.1}px;
-  width: ${iconsize*0.2}px;
+  height: ${sideMargin}px;
+  left: ${-sideMargin*1.5}px;
+  margin-top: ${-sideMargin/2}px;
+  width: ${sideMargin}px;
 }
 #preview-wrapper .guild-1EfMGQ + .guild-1EfMGQ {
   margin-top: ${iconskip}px;
@@ -87,8 +88,8 @@ function generateResultCss(iconsize: number, iconskip: number) {
 #preview-wrapper .guildSeparator-1X4GQ1:after {
   content: " ";
   height: 2px;
-  left: ${sideMargin*100}%;
-  right: ${sideMargin*100}%;
+  left: ${sideMarginRate*100}%;
+  right: ${sideMarginRate*100}%;
 }
 #preview-wrapper .guildsAdd-21_IdK {
   font-size: ${iconsize*0.8}px;
